@@ -59,3 +59,7 @@ def test_get_thought_by_id(client):
     response = client.get(f"/thoughts/{tid}")
     assert response.status_code == 200
     assert response.json["username"] == "anna"
+
+
+def test_fallimento_voluto():
+    assert False, "Test fallimento"
