@@ -9,6 +9,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    environment: docker-repository
 
     steps:
       - name: Checkout codice
@@ -36,7 +37,6 @@ jobs:
 
       - name: Cleanup finale
         run: docker-compose -f docker-compose.yml down -v
-
 
       - name: Docker login
         run: |
