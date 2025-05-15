@@ -15,5 +15,10 @@ services:
       POSTGRES_DB: thoughtsdb
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: adminpass
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+volumes:
+  db_data:
 
 
