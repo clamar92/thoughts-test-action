@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restx import Api
+
 import os
 
 from extensions import db
