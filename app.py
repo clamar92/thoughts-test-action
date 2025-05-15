@@ -9,7 +9,7 @@ from resources.thoughts import api as thoughts_ns
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
 if not DATABASE_URL:
-    raise RuntimeError("La variabile DATABASE_URL non e' stata trovata!)")
+    raise RuntimeError("La variabile DATABASE_URL non e stata trovata!)")
 
 def create_app(config_overrides=None):
 
